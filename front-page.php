@@ -1,42 +1,42 @@
 <?php get_header(); ?>
 
 <!-- HERO -->
-<section class="rc-hero" id="hero">
-    <div class="rc-hero-bg">
-        <img src="<?php echo get_template_directory_uri(); ?>/assets/images/hero-carport.jpg" alt="Carport Robles">
-    </div>
-    <div class="rc-hero-overlay"></div>
-    <div class="rc-hero-particles" id="rcParticles"></div>
-    <div class="rc-hero-content">
-        <div class="rc-hero-badge">
-            <span class="rc-hero-badge-dot"></span>
-            Protección Premium en el Valle de Texas
+<section class="rc-hero-new" id="hero">
+    <div class="rc-hero-container">
+        <div class="rc-hero-text">
+            <span class="rc-location-badge">Mercedes, Texas</span>
+            <h1 class="rc-hero-title">
+                CARPORTS DE <span class="rc-highlight">ACERO</span>
+            </h1>
+            <p class="rc-hero-desc">
+                Protegemos tu vehículo del sol, lluvia y granizo con estructuras metálicas de alta resistencia.<br>
+                Fabricación e instalación profesional para residencias y negocios en el Valle de Texas.
+            </p>
+            <div class="rc-offer-box">
+                <span class="rc-offer-percent">10%</span>
+                <span class="rc-offer-text">DEPÓSITO PARA<br>INICIAR</span>
+            </div>
+            <div class="rc-hero-buttons">
+                <a href="tel:9564744332" class="rc-btn rc-btn-red rc-btn-lg">Llamar Ahora</a>
+                <a href="https://wa.me/19564744332" class="rc-btn rc-btn-outline rc-btn-lg" target="_blank">Enviar Mensaje</a>
+            </div>
+            <div class="rc-tags">
+                <span class="rc-tag">ACERO</span>
+                <span class="rc-tag">A MEDIDA</span>
+                <span class="rc-tag">RESIDENCIAL</span>
+            </div>
         </div>
-        <h1 class="rc-hero-title">
-            No Esperes a Que el Clima <span class="rc-highlight">Dañe Tu Inversión</span>
-        </h1>
-        <p class="rc-hero-subtitle">
-            Cotiza tu carport hoy y empieza con solo <strong>10% de depósito</strong>.
-            Protege tu vehículo del sol, lluvia y granizo con estructuras de la más alta calidad.
-        </p>
-        <div class="rc-hero-buttons">
-            <a href="tel:9564744332" class="rc-btn rc-btn-red rc-btn-lg">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72 12.84 12.84 0 0 0 .7 2.81 2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45 12.84 12.84 0 0 0 2.81.7A2 2 0 0 1 22 16.92z"/></svg>
-                Llamar al (956) 474-4332
-            </a>
-            <a href="https://wa.me/19564744332" class="rc-btn rc-btn-outline rc-btn-lg" target="_blank">
-                <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 15a2 2 0 0 1-2 2H7l-4 4V5a2 2 0 0 1 2-2h14a2 2 0 0 1 2 2z"/></svg>
-                Enviar Mensaje Ahora
-            </a>
+        
+        <div class="rc-hero-media">
+            <div class="rc-video-wrapper">
+                <!-- Reemplaza 'assets/videos/carport-hero.mp4' con tu video real -->
+                <video autoplay muted loop playsinline poster="assets/images/video-poster.jpg">
+                    <source src="assets/videos/carport-hero.mp4" type="video/mp4">
+                </video>
+                <div class="rc-video-glow"></div>
+                <div class="rc-video-edge-fade"></div>
+            </div>
         </div>
-        <div class="rc-hero-location">
-            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 10c0 7-9 13-9 13s-9-6-9-13a9 9 0 0 1 18 0z"/><circle cx="12" cy="10" r="3"/></svg>
-            Mercedes, TX &nbsp;|&nbsp; Valle de Texas
-        </div>
-    </div>
-    <div class="rc-hero-scroll">
-        <span>Descubre más</span>
-        <div class="rc-scroll-line"></div>
     </div>
 </section>
 
