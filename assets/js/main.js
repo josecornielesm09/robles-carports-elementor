@@ -107,19 +107,28 @@ document.addEventListener('DOMContentLoaded', function() {
     function initAnimations() {
         gsap.registerPlugin(ScrollTrigger, ScrollToPlugin);
 
-        // HERO
-        const heroTl = gsap.timeline({ delay: 0.2 });
-        heroTl
-            .from('.rc-hero-badge', { y: 30, opacity: 0, duration: 0.8, ease: 'power3.out' })
-            .from('.rc-hero-title', { y: 40, opacity: 0, duration: 0.8, ease: 'power3.out' }, '-=0.5')
-            .from('.rc-hero-subtitle', { y: 30, opacity: 0, duration: 0.8, ease: 'power3.out' }, '-=0.5')
-            .from('.rc-hero-buttons .rc-btn', { y: 30, opacity: 0, duration: 0.6, stagger: 0.15, ease: 'power3.out' }, '-=0.4')
-            .from('.rc-hero-location', { y: 20, opacity: 0, duration: 0.6, ease: 'power3.out' }, '-=0.3')
-            .from('.rc-hero-scroll', { y: 20, opacity: 0, duration: 0.6, ease: 'power3.out' }, '-=0.2');
+        // === HERO PREMIUM ANIMATIONS (NUEVO) ===
+        const heroNewTl = gsap.timeline({ delay: 0.3 });
+        heroNewTl
+            .from('.rc-location-badge', { y: 20, opacity: 0, duration: 0.6 })
+            .from('.rc-hero-title', { y: 40, opacity: 0, duration: 0.8, ease: 'power3.out' }, '-=0.4')
+            .from('.rc-hero-desc', { y: 20, opacity: 0, duration: 0.6 }, '-=0.5')
+            .from('.rc-offer-box', { scale: 0.9, opacity: 0, duration: 0.5 }, '-=0.3')
+            .from('.rc-hero-buttons .rc-btn', { y: 20, opacity: 0, stagger: 0.15, duration: 0.5 }, '-=0.3')
+            .from('.rc-tag', { y: 15, opacity: 0, stagger: 0.1, duration: 0.4 }, '-=0.3')
+            .from('.rc-hero-media', { x: 60, opacity: 0, scale: 0.95, duration: 1.2, ease: 'power2.out' }, '-=1');
 
-        // HERO PARALLAX
-        gsap.to('.rc-hero-bg img', { yPercent: 30, ease: 'none', scrollTrigger: { trigger: '.rc-hero', start: 'top top', end: 'bottom top', scrub: true } });
-        gsap.to('.rc-hero-content', { yPercent: 50, opacity: 0, ease: 'none', scrollTrigger: { trigger: '.rc-hero', start: 'top top', end: '60% top', scrub: true } });
+        // Parallax suave al hacer scroll en el video
+        gsap.to('.rc-hero-media', {
+            yPercent: 15,
+            ease: 'none',
+            scrollTrigger: {
+                trigger: '.rc-hero-new',
+                start: 'top top',
+                end: 'bottom top',
+                scrub: 1
+            }
+        });
 
         // STATS COUNTER
         document.querySelectorAll('.rc-stat-number').forEach(num => {
